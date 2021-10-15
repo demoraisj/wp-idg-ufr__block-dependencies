@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       Dependências dos Blocos - WP-IDG-UFR
- * Description:       Dependências dos blocos do thema WP-IDG-UFR
+ * Plugin Name:       Blocos WP-IDG-UFR - Dependências
+ * Description:       Dependências dos blocos do tema WP-IDG-UFR
  * Requires at least: 5.8
  * Requires PHP:      7.0
  * Version:           0.1.0
