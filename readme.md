@@ -1,7 +1,7 @@
 # wp-idg-ufr__block-dependencies
 
-> Scripts e estilos comuns entre os blocos do WP-IDG-UFR
-> Contem os recursos do Design System do Governo Federal do Brasil
+> Scripts e estilos comuns entre os blocos do WP-IDG-UFR <br />
+> Contem os recursos do Design System do Governo Federal do Brasil <br />
 > @see https://dsgov.estaleiro.serpro.gov.br/
 
 
