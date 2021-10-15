@@ -1,7 +1,7 @@
 {
   "name": "wp-idg-ufr-blocks-dependencies",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dependências dos componentes do tema WP da Universidade Federal de Rondonópolis.",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
