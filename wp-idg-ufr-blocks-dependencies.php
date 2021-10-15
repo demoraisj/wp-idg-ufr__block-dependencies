@@ -17,7 +17,7 @@ function initialize() {
      * @param $path
      */
 	function uri($path) {
-		return plugins_url() . '/wp-idg-ufr-blocks-dependencies' . $path;
+		return plugins_url() . '/wp-idg-ufr__block-dependencies' . $path;
 	}
 
     /**
