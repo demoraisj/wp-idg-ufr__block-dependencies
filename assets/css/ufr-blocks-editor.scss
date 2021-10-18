@@ -62,11 +62,13 @@ $primary: #007cba;
     z-index: 1;
 
     .icon-wrapper {
-      padding: 35px 0;
-
       i:hover {
         text-shadow: 0 0 10px $primary;
         cursor: pointer;
+      }
+
+      i {
+        padding: 35px 0;
       }
     }
   }

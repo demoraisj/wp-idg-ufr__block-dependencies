@@ -53,12 +53,12 @@
   overflow: auto;
   z-index: 1;
 }
-.ufr-block-component.edit .popup .icon-wrapper {
-  padding: 35px 0;
-}
 .ufr-block-component.edit .popup .icon-wrapper i:hover {
   text-shadow: 0 0 10px #007cba;
   cursor: pointer;
+}
+.ufr-block-component.edit .popup .icon-wrapper i {
+  padding: 35px 0;
 }
 .ufr-block-component.edit.small {
   padding: 15px;
