@@ -50,9 +50,8 @@
   height: 300px;
   box-shadow: 0 0 10px rgba(112, 128, 144, 0.31);
   border-radius: 10px;
-  overflow-y: auto;
+  overflow: auto;
   z-index: 1;
-  overflow-x: hidden;
 }
 .ufr-block-component.edit .popup .icon-wrapper {
   padding: 35px 0;
