@@ -17,11 +17,6 @@ $primary: #007cba;
   }
 }
 
-.type-icon i {
-  margin-top: 0.37em !important;
-  --icon-size: calc((var(--avatar-icon-size) * 75) / 100) !important;
-}
-
 .ufr-block-component.edit {
   padding: 30px;
   border: 1px solid #000;
