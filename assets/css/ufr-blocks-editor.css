@@ -50,21 +50,6 @@
 .ufr-block-component.edit .big-btn:hover {
   background: #008dd4;
 }
-.ufr-block-component.edit .popup {
-  width: 100%;
-  height: 300px;
-  box-shadow: 0 0 10px rgba(112, 128, 144, 0.31);
-  border-radius: 10px;
-  overflow: auto;
-  z-index: 1;
-}
-.ufr-block-component.edit .popup .icon-wrapper i:hover {
-  text-shadow: 0 0 10px #007cba;
-  cursor: pointer;
-}
-.ufr-block-component.edit .popup .icon-wrapper i {
-  padding: 35px 0;
-}
 .ufr-block-component.edit .listBuilder {
   border: #6c757d solid 1px;
   border-radius: 5px;
