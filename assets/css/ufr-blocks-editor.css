@@ -34,6 +34,9 @@
   height: 30px;
   margin: 2px 0 0 0;
 }
+.ufr-block-component.edit .rfip {
+  margin: 2px 0 0 0;
+}
 .ufr-block-component.edit .big-btn {
   color: #fff;
   background: #006ba1;
