@@ -46,6 +46,8 @@ function initialize() {
     }
 
     function block_assets() {
+        wp_enqueue_style('glider.css', '//cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.min.css');
+        wp_enqueue_script('glider.js', '//cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.min.js', NULL, '1.0', true);
         wp_enqueue_script('ufr-idg-blocks.js', uri('/index.js'), NULL, '1.0', true);
     }
 

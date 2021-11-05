@@ -1,1 +1,2 @@
-import './scripts/block-responsivity.js';
+import './lib/block-responsivity.js';
+import './lib/slider-initializer.js';
