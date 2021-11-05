@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
     const sliders = document.querySelectorAll('.glider');
 
     for (const slider of sliders) {
-        const autoOrValue = (v) => v !== 'auto' ? Number(v) : v;
+        const autoOrValue = (v) => v === 'auto' ? v : isNaN(Number(v)) ? undefined : Number(v);
         const parseOptions = (v) => {
             try {
                 return JSON.parse(v);
@@ -13,6 +13,9 @@ window.addEventListener('load', function () {
             }
         }
         const { slidesToShow, slidesToScroll, itemWidth, exactWidth, duration, responsive } = slider.dataset;
+
+        console.log(autoOrValue(slidesToShow) ?? 1)
+        console.log(autoOrValue(slidesToScroll) ?? 1)
 
         new Glider(slider, {
             slidesToShow: autoOrValue(slidesToShow) ?? 1,
