@@ -1,2 +1,3 @@
 import './lib/block-responsivity.js';
-import './lib/slider-initializer.js';
+
+window.dispatchEvent(new Event('ufr-block-dependencies-loaded'));

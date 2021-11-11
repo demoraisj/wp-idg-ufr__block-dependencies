@@ -28,7 +28,7 @@ function initialize() {
      * @param $src Endereço
      */
 	function add_type_attribute($tag, $handle, $src) {
-        if ('ufr-idg-blocks.js' !== $handle) {
+        if ('ufr-idg-blocks-dependencies.js' !== $handle) {
             return $tag;
         }
 
@@ -46,9 +46,9 @@ function initialize() {
     }
 
     function block_assets() {
-        wp_enqueue_style('glider.css', '//cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.min.css');
-        wp_enqueue_script('glider.js', '//cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.min.js', NULL, '1.0', true);
-        wp_enqueue_script('ufr-idg-blocks.js', uri('/index.js'), NULL, '1.0', true);
+        wp_enqueue_style('splide.css', '//cdn.jsdelivr.net/npm/@splidejs/splide@3.3.0/dist/css/splide.min.css');
+        wp_enqueue_script('splide.js', '//cdn.jsdelivr.net/npm/@splidejs/splide@3.3.0/dist/js/splide.min.js', NULL, '1.0', true);
+        wp_enqueue_script('ufr-idg-blocks-dependencies.js', uri('/index.js'), NULL, '1.0', true);
     }
 
     // Carrega scripts apenas no editor de blocos
