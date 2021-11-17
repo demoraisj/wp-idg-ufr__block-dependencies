@@ -46,8 +46,6 @@ function initialize() {
     }
 
     function block_assets() {
-        wp_enqueue_style('splide.css', '//cdn.jsdelivr.net/npm/@splidejs/splide@3.3.0/dist/css/splide.min.css');
-        wp_enqueue_script('splide.js', '//cdn.jsdelivr.net/npm/@splidejs/splide@3.3.0/dist/js/splide.min.js', NULL, '1.0', true);
         wp_enqueue_script('ufr-idg-blocks-dependencies.js', uri('/index.js'), NULL, '1.0', true);
     }
 
