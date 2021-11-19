@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-minify": "^0.5.1",
     "regenerator-runtime": "^0.13.9"
   }
 }
