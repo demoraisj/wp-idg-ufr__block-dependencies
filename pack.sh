@@ -1,4 +1,5 @@
 blockname="dependencies"
+composedname="wp-idg-ufr__block-$blockname"
 
 if ! command -v npm &> /dev/null
 then
@@ -12,15 +13,18 @@ then
 	exit 1
 fi
 
+rm $composedname.zip
+
 npm run build &&
 
-(cd ./assets && babel client.esnext.js --out-file client-$blockname.js) &&
+mkdir -p $composedname/node_modules/regenerator-runtime &&
+cp -r ./lib ./$composedname &&
+cp -r ./assets ./$composedname &&
+cp ./index.js ./$composedname &&
+cp ./node_modules/regenerator-runtime/runtime.js ./$composedname/node_modules/regenerator-runtime/runtime.js &&
+cp ./$composedname.php ./$composedname &&
 
-if ./wp-idg-ufr__block-$blockname.zip &> /dev/null
-then
-	rm ./wp-idg-ufr__block-$blockname.zip
-fi
+zip $composedname.zip ./$composedname -r &&
+rm -rf ./$composedname &&
 
-zip wp-idg-ufr__block-$blockname.zip ./build ./assets ./lib ./index.js ./wp-idg-ufr__block-$blockname.php -r &&
-
-echo "Done. Packed file: wp-idg-ufr__block-$blockname.zip"
+echo "Done. Packed file: $composedname.zip"
